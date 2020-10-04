@@ -89,7 +89,7 @@ class LollipopChart extends Component {
     series.columns.template.width = 0.01;
     series.tooltip.pointerOrientation = "horizontal";
     
-    let bullet = series.bullets.create(am4charts.CircleBullet);
+   // let bullet = series.bullets.create(am4charts.CircleBullet);
     
     chart.cursor = new am4charts.XYCursor();
     
@@ -105,7 +105,7 @@ class LollipopChart extends Component {
 
 
   render() {
-    const { chartId } = this.props;
+   // const { chartId } = this.props;
     return (
       <Fragment>
         <div id={"LollipopChart"}></div>

@@ -66,7 +66,7 @@ class LiveData extends Component {
 
 
   render() {
-    const { chartId } = this.props;
+   // const { chartId } = this.props;
     return (
       <Fragment>
         <div id={"LiveData"}></div>
