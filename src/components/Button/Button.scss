@@ -1,0 +1,311 @@
+// button
+.btn:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.btn.active {
+  outline: none;
+  box-shadow: none;
+}
+
+.al_button {
+  background: #89dead;
+  color: #fff;
+  font-weight: 500;
+}
+
+.al_button:hover,
+.al_button:active,
+.al_button:visited,
+.al_button:focus {
+  background: #28c777 !important;
+  border: 1px solid #28c777 !important;
+  color: #fff !important;
+}
+
+.al_button.active {
+  background: #28c777 !important;
+  border: 1px solid #28c777 !important;
+}
+
+.al_button_01{
+  background-color: #1bb18b;
+  color: #fff;
+  font-weight: 500;
+  border-radius:4px;
+  border: none;
+}
+
+.al_button_1 {
+  color: #aab9ce;
+}
+
+.al_button_1.active {
+  border-bottom: 3px solid #00c3d9 !important;
+  font-weight: 700;
+}
+
+//third button style
+.al_button_3 {
+  background: var(--color-12);
+  color: #fff;
+  font-weight: 500;
+  transition: all 0.3s ease 0s;
+}
+
+.al_button_3:hover,
+.al_button_3:active,
+.al_button_3:visited,
+.al_button_3:focus {
+  border: 2px solid var(--color-12) !important;
+  background-color: var(--color-12);
+  box-shadow: 0px 15px 20px rgba(232, 115, 149, 0.4);
+  color: #fff;
+  transform: translateY(-7px);
+}
+
+//4th button style
+.al_button_4 {
+  background: var(--color-4);
+  color: #fff;
+  font-weight: 500;
+  transition: all 0.3s ease 0s;
+}
+
+.al_button_4:hover,
+.al_button_4:active,
+.al_button_4:visited,
+.al_button_4:focus {
+  border: 2px solid var(--color-4) !important;
+  background-color: var(--color-4);
+  box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+  color: #fff;
+  transform: translateY(-7px);
+}
+
+.al_button_5 {
+  border-bottom: 1px solid var(--color-8);
+  color: var(--color-1);
+}
+
+.al_button_5:hover,
+.al_button_5:active,
+.al_button_5:visited,
+.al_button_5:focus {
+  font-weight: 700;
+  border: 2px solid var(--color-8);
+  cursor: pointer !important;
+}
+
+.al_button_6 {
+  border: 1px solid var(--color-9);
+  cursor: pointer !important;
+  color: var(--color-9);
+}
+
+.al_button_7 {
+  background: #ffff;
+  color: gray;
+  font-weight: 500;
+  border: 1px solid gray !important;
+}
+
+.al_button_7:hover,
+.al_button_7:active,
+.al_button_7:visited,
+.al_button_7:focus {
+  background: gray !important;
+  border: 1px solid gray !important;
+  color: #fff !important;
+}
+.al_button_8 {
+  // background: #ffff;
+  background: var(--color-14);
+  // color:  gray;
+  color: var(--color-17);
+  font-weight: 500;
+  // border: 1px solid gray !important;
+}
+
+.al_button_8:hover,
+.al_button_8:active,
+.al_button_8:visited,
+.al_button_8:focus {
+  // background: gray !important;
+  background: var(--color-14);
+  border: 1px solid gray !important;
+  color: var(--color-18) !important;
+}
+
+.al_button_9 {
+  border-radius: 20px;
+  padding: 0.5rem ;
+  color: #000;
+  background: #fff;
+  border: 2px solid gray;
+  cursor: pointer;
+  transition: color 0.3s, background 0.3s, border-color 0.3s;
+}
+.al_button_9:hover {
+  background: var(--color-19) !important;
+}
+.al_button_9:focus {
+  outline: unset;
+}
+.active_button {
+  background: var(--color-19) !important;
+}
+
+.btn_edit {
+  background: var(--color-19) !important;
+}
+
+.btn_refresh {
+  background: gray !important;
+}
+
+.btn_delete {
+  background: var(--color-5);
+}
+
+.btn_success {
+  background: var(--color-11);
+}
+
+.btn_color_1 {
+  background: var(--color-1) !important;
+  color: white;
+  font-weight: 500;
+}
+
+.btn_color_2 {
+  background: var(--color-12);
+}
+
+.btn_color_3 {
+  background: var(--color-8);
+}
+
+//circular button
+.btn_circular {
+  border-radius: 50%;
+}
+
+.btn-xs {
+  padding: 0.2rem 0.5rem;
+  font-size: 0.6rem;
+  line-height: 1;
+  border-radius: 0.2rem;
+}
+
+.btn_event {
+  pointer-events: none;
+}
+
+.btn_spinner {
+  position: absolute;
+  left: 30%;
+  top: 1px;
+  display: inline-block;
+  height: 16px;
+  width: 16px;
+  border-width: 3px;
+  border-top-width: 3px;
+  border-top-color: #36d7b7;
+  border: solid rgba(255, 255, 255, 0.35);
+  border-radius: 50%;
+  border-top: solid;
+  -webkit-animation: btn_spin 1s linear infinite; /* Safari */
+  animation: btn_spin 1s linear infinite;
+}
+
+@keyframes btn_spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.al_button_10{
+  background:  white !important;
+  border: 1px solid  deepskyblue !important;
+  color: deepskyblue !important;
+  border-radius: 5px;
+  box-shadow:0 2px 4px 0 rgba(0, 0, 0, 0.1), 0 4px 12px 0 rgba(0, 0, 0, 0.12);
+}
+
+.al_button_10:hover,
+.al_button_10:visited,
+.al_button_10:focus {
+  background:  deepskyblue !important;
+  border: 1px solid  deepskyblue !important;
+  color: #fff !important;
+  font-weight:bold;
+  box-shadow:0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.al_button_10.active{
+  background:  deepskyblue !important;
+  border: 1px solid  deepskyblue !important;
+  color: #fff !important;
+  font-weight:bold;
+  box-shadow:0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.al_button_11{
+  background:  white !important;
+  border: 1px solid  #28c777 !important;
+  color: #28c777 !important;
+  border-radius: 5px;
+  box-shadow:0 2px 4px 0 rgba(0, 0, 0, 0.1), 0 4px 12px 0 rgba(0, 0, 0, 0.12);
+}
+
+.al_button_11:hover,
+.al_button_11:visited,
+.al_button_11:focus {
+  background:  #28c777 !important;
+  border: 1px solid  #28c777 !important;
+  color: #fff !important;
+  font-weight:bold;
+  box-shadow:0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.al_button_11.active{
+  background:  #28c777 !important;
+  border: 1px solid  #28c777 !important;
+  color: #fff !important;
+  font-weight:bold;
+  box-shadow:0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.al_button_12{
+  background:  white !important;
+  border: 1px solid  var(--color-19) !important;
+  color: #000 !important;
+  border-radius: 5px;
+  box-shadow:0 2px 4px 0 rgba(0, 0, 0, 0.1), 0 4px 12px 0 rgba(0, 0, 0, 0.12);
+}
+
+.al_button_12:hover,
+.al_button_12:visited,
+.al_button_12:focus {
+  background:  var(--color-19) !important;
+  border: 1px solid  var(--color-19) !important;
+  color: #000 !important;
+  font-weight:bold;
+  box-shadow:0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.al_button_12.active{
+  background:  var(--color-19) !important;
+  border: 1px solid  var(--color-19) !important;
+  color: #000 !important;
+  font-weight:bold;
+  box-shadow:0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+

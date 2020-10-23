@@ -1,0 +1,66 @@
+
+:root {
+    --color-1: #00c3d9;
+    --color-2: #6239bf;
+    --color-3: #1c1e56;
+    --color-4: #00d994;
+    --color-5: #df3868;
+    --color-6: #f4f6f9;
+    --color-7: #e8edf3;
+    --color-8: #d1dbd8;
+    --color-9: #aab9ce;
+    --color-10: #89dead;
+    --color-11: #28c777;
+    --color-12: #e87395;
+    --color-13: #000000;
+    --color-14: #193446;
+    --color-15: #3e3e3b;
+    --color-16: #dfe2d2;
+    // --color-17: #6d7973;
+    --color-17: #b3ad57c9;
+    --color-18: #ffc107;
+    --color-19: #fad02c;
+    --color-20: #d0ebff;
+  }
+  
+.bg-dark {
+    // background: #0a1612;
+    background: #0a1612;
+  }
+  .bg_1 {
+    background: #f7f6f6;
+  }
+  .bg_2 {
+    background: #8b9dd0;
+  }
+  .bg_3 {
+    //background:#78c3bc
+    background: var(--color-15) !important;
+  }
+  .bg_4 {
+    //background:#78c3bc
+    background: #ffc1072b !important;
+  }
+  .bg_5 {
+    //background:#78c3bc
+    background: var(--color-17) !important;
+  }
+  .bg_6 {
+    //background:#d0ebff
+    background: var(--color-20) !important;
+  }
+
+
+
+.al_tabs_2{
+    border-bottom: solid 2px #e9ecef;
+    font-weight: 500;
+    font-size: 13px;
+    white-space: nowrap;
+   // padding-bottom: 8px;
+  .active {
+    color: green;
+    padding-bottom: 8px;
+    border-bottom: solid 5px green !important;
+  }
+  }

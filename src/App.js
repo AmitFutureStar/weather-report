@@ -3,6 +3,9 @@ import React, { Component } from "react";
 import moment from "moment";
 import LollipopChart from "./LollipopChart";
 import LiveData from "./LiveData"
+import UploadRtas from "./UploadRtas"
+import Dateformat from "./Dateformat"
+import HighchartSolidGauge from "./components/HighchartSolidGauge"
 import "./App.css";
 class App extends Component {
   constructor(props) {
@@ -267,6 +270,20 @@ class App extends Component {
           </div>
           <LiveData/>
           <LollipopChart/>
+          <UploadRtas/>
+          <Dateformat/>
+
+          <HighchartSolidGauge
+          chartId={"test"}
+          chartData={60}
+          colorsIndex={3}
+          />
+
+<HighchartSolidGauge
+          chartId={"test1"}
+          chartData={80}
+          colorsIndex={2}
+          />
         </div>
       </div>
     );

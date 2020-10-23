@@ -1,0 +1,105 @@
+
+.switch {
+	position: relative;
+	display: block;
+	//vertical-align: top;
+	width: 100px;
+	height: 30px;
+	padding: 0px;
+	margin: 0 10px 10px 0;
+	background: linear-gradient(to bottom, #eeeeee, #FFFFFF 25px);
+//	background-image: -webkit-linear-gradient(top, #eeeeee, #FFFFFF 25px);
+	border-radius: 18px;
+	box-shadow: inset 0 -1px white, inset 0 1px 1px rgba(0, 0, 0, 0.05);
+	cursor: pointer;
+	box-sizing:content-box;
+}
+.switch_input {
+	position: absolute;
+	top: 0;
+	left: 0;
+	opacity: 0;
+	box-sizing:content-box;
+}
+.switch_label {
+	position: relative;
+	display: block;
+	height: inherit;
+	font-size: 11px;
+	text-transform: uppercase;
+	background: #17a2b8;
+	border-radius: inherit;
+//	box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.12), inset 0 0 2px rgba(0, 0, 0, 0.15);
+	box-sizing:content-box;
+}
+.switch_label:before, .switch_label:after {
+	position: absolute;
+	top: 50%;
+	margin-top: -.5em;
+	line-height: 1;
+	-webkit-transition: inherit;
+	-moz-transition: inherit;
+	-o-transition: inherit;
+	transition: inherit;
+	box-sizing:content-box;
+}
+.switch_label:before {
+	content: attr(data-off);
+	right: 12px;
+	color: #FFFFFF;
+	text-shadow: 0 1px rgba(255, 255, 255, 0.5);
+}
+.switch_label:after {
+	content: attr(data-on);
+	left: 12px;
+	color: #FFFFFF;
+	text-shadow: 0 1px rgba(0, 0, 0, 0.2);
+	opacity: 0;
+}
+.switch_input:checked ~ .switch_label {
+	background: #E1B42B;
+	box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.15), inset 0 0 3px rgba(0, 0, 0, 0.2);
+}
+.switch_input:checked ~ .switch_label:before {
+	opacity: 0;
+}
+.switch_input:checked ~ .switch_label:after {
+	opacity: 1;
+}
+.switch_handle {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 29px;
+    height: 29px;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(40%, #FFFFFF), to(#f0f0f0));
+    /* background: linear-gradient(to bottom, #FFFFFF 40%, #f0f0f0); */
+    /* background-image: -webkit-linear-gradient(top, #FFFFFF 40%, #f0f0f0); */
+    border-radius: 100%;
+}
+.switch_handle:before {
+	content: "";
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin: -6px 0 0 -6px;
+	width: 12px;
+	height: 12px;
+	background: linear-gradient(to bottom, #eeeeee, #FFFFFF);
+	background-image: -webkit-linear-gradient(top, #eeeeee, #FFFFFF);
+	border-radius: 6px;
+	box-shadow: inset 0 1px rgba(0, 0, 0, 0.02);
+}
+.switch_input:checked ~ .switch_handle {
+	left: 74px;
+	box-shadow: -1px 1px 5px rgba(0, 0, 0, 0.2);
+}
+ 
+/* Transition
+========================== */
+.switch_label, .switch_handle {
+	transition: All 0.3s ease;
+	-webkit-transition: All 0.3s ease;
+	-moz-transition: All 0.3s ease;
+	-o-transition: All 0.3s ease;
+}
